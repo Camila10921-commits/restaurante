@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Menú del Restaurante</h1>
+            <h2>Mesa 1</h2>
+        </div>
+
+        <div class="menu">
+            <h2>Platos especiales</h2>
+            <div class="entry" id="calamares-special" data-price="18000">
+                <label>Calamares Apanados</label>
+                <p class="description">Anillos de calamar apanados en panko con salsa de frutas tropicales</p>
+                <p class="price">$18,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+
+            <div class="entry" id="camarones-special" data-price="23000">
+                <label>Montadito de Camarones</label>
+                <p class="description">Camarones salteados en piña colada, sobre puré de plátano maduro y crocantes de plátano verde</p>
+                <p class="price">$23,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+
+            <div class="entry" id="lomo-special" data-price="19000">
+                <label>Montadita de Lomo</label>
+                <p class="description">Bruschetta alioli con lomo viche sellado y vegetales asados.</p>
+                <p class="price">$19,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+        </div>
+
+        <div class="menu">
+            <h2>Bebidas</h2>
+            <div class="entry" id="limonada" data-price="3000">
+                <label>Limonada</label>
+                <p class="price">$3,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+
+            <div class="entry" id="limonada-coco" data-price="6000">
+                <label>Limonada de coco</label>
+                <p class="price">$6,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+
+            <div class="entry" id="cerezada" data-price="6000">
+                <label>Cerezada</label>
+                <p class="price">$6,000</p>
+                <input type="number" class="quantity" value="0" min="0" readonly>
+                <button class="change-quantity" data-action="add">+</button>
+                <button class="change-quantity" data-action="remove">-</button>
+            </div>
+        </div>
+
+        <div class="total">
+            <p>Total: <span id="total">$0.00</span></p>
+        </div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>
